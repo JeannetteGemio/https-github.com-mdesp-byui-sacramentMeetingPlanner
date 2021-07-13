@@ -42,4 +42,24 @@ public class Opening extends AppCompatActivity {
         sacrament = findViewById(R.id.sacrament);
 
     }
+   
+   public void announcements(View view){
+        Intent intent = new Intent(Agenda.this, Announcements.class);
+        startActivity(intent);
+    }
+
+    public void buttonWard(View view){
+        Intent intent = new Intent(Agenda.this, WardBusiness.class);
+        startActivity(intent);
+    }
+
+    public void buttonStake(View view){
+        Intent intent = new Intent(Agenda.this, StakeBusiness.class);
+        startActivity(intent);
+    }
+
+    public void sacrament(View view){
+        Intent intent = new Intent(Agenda.this, SacramentProgram.class);
+        startActivity(intent);
+    }
 }
